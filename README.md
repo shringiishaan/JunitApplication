@@ -1,1 +1,3 @@
-"Sample gradle application that produces Junit xml reports on testing. Use 'gradle clean test'." 
+Sample gradle application that produces Junit xml reports on testing. 
+Use 'gradle test'
+results directory : /target/test-results/
