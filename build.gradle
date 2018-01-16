@@ -1,0 +1,37 @@
+apply plugin: 'java'
+
+repositories 
+{
+    mavenCentral()
+	mavenLocal()
+}
+
+dependencies 
+{
+	testCompile 'junit:junit:4.12'
+}
+
+apply plugin: 'icpl.qtm4gradle'
+
+qtmConfig 
+{
+	qtmApiUrl = 'https://qtmnewuiqa.qmetry.com/'
+	qtmApiKey = 'qLsinCcfP2n02ZIejo7mUdAZVM3ZgwY0NwIFUTZj'
+	testRunName = 'QTM4Gradle Test Run - JUNIT'
+	testRunDescription = 'This Test suite is created by Gradle Plugin QTM4Gradle'
+	testResultFileFormat = 'junit/xml'
+	testResultFilePath = '/test-results/test/*.xml'
+}
+
+buildscript
+{
+    repositories 
+	{
+        mavenLocal()
+		mavenCentral()
+    }
+    dependencies 
+	{
+        classpath 'icpl:QTM4Gradle:1.0.0-SNAPSHOT'
+    }
+}
