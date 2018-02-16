@@ -1,3 +1,4 @@
+# JUnit Gradle Sample Application
 Sample gradle application that produces Junit xml reports on testing.
 
 Use the following command:
