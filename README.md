@@ -3,7 +3,7 @@ Sample gradle application that produces Junit xml reports on testing.
 
 Use the following command:
 ```
-gradle test
+gradle clean test
 ```
 results directory : **/build/test-results/test/**
 
